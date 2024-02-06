@@ -4,7 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { BiCart } from "react-icons/bi";
 import classes from "./Header.module.css";
 import LowerHeader from "./LowerHeader";
-
+import {Link} from "react-router-dom"
 function Header() {
   return (
     <>
@@ -12,9 +12,9 @@ function Header() {
             <div className={classes.header_container}>
                 <div className={classes.logo_container}>
  {/* logo */}
- <a href="/">
+ <Link to="/">
                     <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon" />
-                </a>
+                </Link>
                 <div className={classes.delivery}>
                     {/* delivery */}
                 <span>
@@ -43,38 +43,38 @@ function Header() {
             <div className={classes.order_container}>
                 {/* right side link */}
                 
-                    <a href="" className={classes.language}>
+                    <Link to="" className={classes.language}>
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="" />
                     
                     <select name="" id="">
                        <option value=""> EN</option> 
                     </select>
-                    </a>
+                    </Link>
                     {/* three components */}
-<a href="">
+<Link to="">
     
         <p>Sign In</p>
         <span>Account & Lists</span>
 
     
-</a>
+</Link>
 {/* orders */}
-<a href="">
+<Link to="/orders">
     
         <p>returns</p>
         <span>& Orders</span>
 
     
-</a>
+</Link>
 {/* cart */}
-<a to={"/cart"} className={classes.cart}>
+<Link to="/cart" className={classes.cart}>
     
         {/* icon */}
         <BiCart size={35} />
         <span>0</span>
 
     
-</a>
+</Link>
             </div>
             </div>
           

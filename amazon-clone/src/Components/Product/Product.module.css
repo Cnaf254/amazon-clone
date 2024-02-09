@@ -78,6 +78,6 @@ object-fit: contain;
     .product_flexed {
       display: flex;
       flex-direction: column;
-      height: 470px;
+      
     }
   }

@@ -30,7 +30,7 @@ function Header() {
                 </span>
                 <div >
                     <p> Deliver to</p>
-                    <span>Ethiopia</span>
+                    <span>America</span>
                 </div>
                 </div>
                 
@@ -44,7 +44,7 @@ function Header() {
                 </select>
                 <input type="text" name="" id="" placeholder="search product" />
                 {/* icon */}
-                <BsSearch size={25} />
+                <BsSearch size={38} />
             </div>
             <div className={classes.order_container}>
                 {/* right side link */}

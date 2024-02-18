@@ -76,11 +76,11 @@ signInWithEmailAndPassword(auth,email,password).then((userInfo)=>{
             fontWeight: "bold",
           }}>
             {navStateData?.state?.msg}
-          </small>
+            </small>
         )
       }
       <form action="">
-        <div>
+      <div>
     <label htmlFor="email">Email</label>
     <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" id="email" />
         </div>
